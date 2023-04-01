@@ -1,14 +1,15 @@
 import React from 'react';
-import {createRoot} from 'react-dom/client'
+
 import App from "./components/App/App";
-
+import ReactDOM from 'react-dom/client';
 import './styles/index.css'
-import {BrowserRouter} from "react-router-dom";
+import {HashRouter} from "react-router-dom";
 
 
-createRoot(document.getElementById("root")).render(
-    <BrowserRouter>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <HashRouter>
         <App />
-    </BrowserRouter>
+    </HashRouter>
 
 )

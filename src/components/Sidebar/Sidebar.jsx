@@ -16,6 +16,11 @@ const Sidebar = () => {
                             Link
                         </NavLink>
                     </li>
+                    <li>
+                        <NavLink>
+                            hui
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
 

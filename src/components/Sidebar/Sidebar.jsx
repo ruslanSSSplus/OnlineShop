@@ -1,9 +1,12 @@
 import React from 'react';
 import classes from '../../styles/Sidebar.module.css'
 import {NavLink} from "react-router-dom";
-
+import {useSelector} from "react-redux";
+import styles from "../../styles/Sidebar.module.css";
 
 const Sidebar = () => {
+    const { list } = useSelector(({categories}) => categories)
+
     return (
         <section className={classes.sidebar}>
             <div className={classes.title}>
@@ -11,16 +14,19 @@ const Sidebar = () => {
             </div>
             <nav>
                 <ul className={classes.menu}>
-                    <li>
-                        <NavLink>
-                            Link
+                    {list.map(({id, name}) =>(
+                        <li key={id}>
+                            <NavLink
+                                className={({ isActive }) =>
+                                    `${styles.link} ${isActive ? styles.active : ""}`
+                                }
+                                to={`/categories/${id}`}
+                            >
+                            {name}
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink>
-                            hui
-                        </NavLink>
-                    </li>
+                    ))}
+
                 </ul>
             </nav>
 

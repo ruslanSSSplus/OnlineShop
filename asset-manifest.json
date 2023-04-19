@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/onlineShop/static/css/main.8f1b5779.css",
-    "main.js": "/onlineShop/static/js/main.19c2b436.js",
+    "main.css": "/onlineShop/static/css/main.b12f222e.css",
+    "main.js": "/onlineShop/static/js/main.c75310b6.js",
+    "static/media/computer.png": "/onlineShop/static/media/computer.5e56530d0ea3793fd73d.png",
     "static/media/avatar.jpg": "/onlineShop/static/media/avatar.4bc3b938691acbda7100.jpg",
+    "static/media/devices.png": "/onlineShop/static/media/devices.a0974f63230d0b90cbec.png",
+    "static/media/shoe.png": "/onlineShop/static/media/shoe.db601c8f04844976b606.png",
     "static/media/logo.svg": "/onlineShop/static/media/logo.fb6afde46b43989ab58d298634d1c757.svg",
     "index.html": "/onlineShop/index.html",
-    "main.8f1b5779.css.map": "/onlineShop/static/css/main.8f1b5779.css.map",
-    "main.19c2b436.js.map": "/onlineShop/static/js/main.19c2b436.js.map"
+    "main.b12f222e.css.map": "/onlineShop/static/css/main.b12f222e.css.map",
+    "main.c75310b6.js.map": "/onlineShop/static/js/main.c75310b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f1b5779.css",
-    "static/js/main.19c2b436.js"
+    "static/css/main.b12f222e.css",
+    "static/js/main.c75310b6.js"
   ]
 }

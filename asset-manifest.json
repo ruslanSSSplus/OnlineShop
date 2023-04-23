@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/onlineShop/static/css/main.b12f222e.css",
-    "main.js": "/onlineShop/static/js/main.c879bcd1.js",
+    "main.css": "/onlineShop/static/css/main.71f7baff.css",
+    "main.js": "/onlineShop/static/js/main.5ac8121b.js",
     "static/media/computer.png": "/onlineShop/static/media/computer.5e56530d0ea3793fd73d.png",
+    "static/media/banner.png": "/onlineShop/static/media/banner.60b57e7c22678c62bf30.png",
     "static/media/avatar.jpg": "/onlineShop/static/media/avatar.4bc3b938691acbda7100.jpg",
     "static/media/devices.png": "/onlineShop/static/media/devices.a0974f63230d0b90cbec.png",
     "static/media/shoe.png": "/onlineShop/static/media/shoe.db601c8f04844976b606.png",
     "static/media/logo.svg": "/onlineShop/static/media/logo.fb6afde46b43989ab58d298634d1c757.svg",
     "index.html": "/onlineShop/index.html",
-    "main.b12f222e.css.map": "/onlineShop/static/css/main.b12f222e.css.map",
-    "main.c879bcd1.js.map": "/onlineShop/static/js/main.c879bcd1.js.map"
+    "main.71f7baff.css.map": "/onlineShop/static/css/main.71f7baff.css.map",
+    "main.5ac8121b.js.map": "/onlineShop/static/js/main.5ac8121b.js.map"
   },
   "entrypoints": [
-    "static/css/main.b12f222e.css",
-    "static/js/main.c879bcd1.js"
+    "static/css/main.71f7baff.css",
+    "static/js/main.5ac8121b.js"
   ]
 }

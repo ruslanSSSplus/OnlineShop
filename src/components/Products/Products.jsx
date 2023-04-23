@@ -2,7 +2,6 @@ import React from 'react';
 
 import styles from "../../styles/Products.module.css";
 
-import BG from "../../images/computer.png";
 import {Link} from "react-router-dom";
 
 const Products = ({title, style = {}, products = [], amount}) => {

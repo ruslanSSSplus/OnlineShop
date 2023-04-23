@@ -1,6 +1,6 @@
-export const Routes= {
+export const ROUTES= {
     Home: '/',
     Cart: '/cart',
     Category: '/categories/:id',
-    Product: '/product/:id'
+    Product: '/products/:id'
 }

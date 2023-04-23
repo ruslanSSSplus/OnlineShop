@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 import styles from "../../styles/Header.module.css";
 
-import { Routes } from "../../Utils/routes";
+import { ROUTES } from "../../Utils/routes";
 
 import LOGO from "../../images/logo.svg";
 import avatar from "../../images/avatar.jpg";
@@ -16,7 +16,7 @@ const Header = () => {
     return (
         <div className={styles.header}>
             <div className={styles.logo}>
-                <Link to={Routes.Home}>
+                <Link to={ROUTES.Home}>
                     <img src={LOGO} alt="Stuff" />
                 </Link>
             </div>
@@ -53,13 +53,13 @@ const Header = () => {
                 </form>
 
                 <div className={styles.account}>
-                    <Link to={Routes.Home} className={styles.favourites}>
+                    <Link to={ROUTES.Home} className={styles.favourites}>
                         <svg className={styles["icon-fav"]}>
                             <use xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#heart`} />
                         </svg>
                     </Link>
 
-                    <Link to={Routes.Cart} className={styles.cart}>
+                    <Link to={ROUTES.Cart} className={styles.cart}>
                         <svg className={styles["icon-cart"]}>
                             <use xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#bag`} />
                         </svg>

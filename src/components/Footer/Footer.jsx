@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from '../../styles/Footer.module.css'
 import {Link} from "react-router-dom";
-import {Routes} from "../../Utils/routes";
+import {ROUTES} from "../../Utils/routes";
 
 import logo from '../../images/logo.svg'
 
@@ -10,7 +10,7 @@ import logo from '../../images/logo.svg'
 const Footer = () => (
         <section className={classes.footer}>
             <div className={classes.logo}>
-                <Link to={Routes.Home}>
+                <Link to={ROUTES.Home}>
                     <img src={logo}/>
                 </Link>
             </div>

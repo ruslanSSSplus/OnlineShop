@@ -87,6 +87,7 @@ const userSlice = createSlice({
         // todo добавить лоадер
         builder.addCase(createUser.fulfilled, addCurrentUser);
         builder.addCase(loginUser.fulfilled, addCurrentUser);
+        builder.addCase(updateUser.fulfilled, addCurrentUser);
     })
 })
 

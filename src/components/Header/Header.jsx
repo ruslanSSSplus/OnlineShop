@@ -14,6 +14,7 @@ import {toggleForm} from "../../features/user/userSlice";
 
 const Header = () => {
     const dispatch = useDispatch()
+    const navigate = useNavigate()
     const {currentUser} = useSelector(({user}) => user)
 
     const [values, setValues] = useState({name: "Guest", avatar: AVATAR})
@@ -26,7 +27,7 @@ const Header = () => {
     const handleClick = () =>{
         if(!currentUser){
             dispatch(toggleForm(true))
-        }
+        } else navigate(ROUTES.Profile)
     }
     return (
         <div className={styles.header}>

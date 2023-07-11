@@ -16,7 +16,7 @@ const Header = () => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
 
-    const {currentUser} = useSelector(({user}) => user)
+    const {currentUser, cart} = useSelector(({user}) => user)
     const [searchValue, setSearchValue] = useState("");
 
     const [values, setValues] = useState({name: "Guest", avatar: AVATAR})
@@ -37,8 +37,7 @@ const Header = () => {
         setSearchValue(value);
     };
 
-    return (
-        <div className={styles.header}>
+    return (<div className={styles.header}>
             <div className={styles.logo}>
                 <Link to={ROUTES.Home}>
                     <img src={LOGO} alt="Stuff"/>
@@ -72,30 +71,25 @@ const Header = () => {
                     </div>
 
                     {searchValue && <div className={styles.box}>
-                        {
-                            isLoading ? 'Loading' : !data.length ? 'No results' :
-                                data.map(({title, images, id}) => {
-                                    return (
-                                        <Link
-                                            onClick={() => setSearchValue('')}
-                                            className={styles.item}
-                                            to={`/products/${id}`}
-                                            key={id}
-                                        >
-                                            <div className={styles.image}
-                                                 style={{backgroundImage: `url(${images[0]})`}}
-                                            />
+                        {isLoading ? 'Loading' : !data.length ? 'No results' : data.map(({title, images, id}) => {
+                            return (<Link
+                                    onClick={() => setSearchValue('')}
+                                    className={styles.item}
+                                    to={`/products/${id}`}
+                                    key={id}
+                                >
+                                    <div className={styles.image}
+                                         style={{backgroundImage: `url(${images[0]})`}}
+                                    />
 
 
-                                            <div className={styles.title}>
-                                                {title}
+                                    <div className={styles.title}>
+                                        {title}
 
-                                            </div>
+                                    </div>
 
-                                        </Link>
-                                    )
-                                })
-                        }
+                                </Link>)
+                        })}
 
                     </div>}
                 </form>
@@ -111,14 +105,14 @@ const Header = () => {
                         <svg className={styles["icon-cart"]}>
                             <use xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#bag`}/>
                         </svg>
-                        <span className={styles.count}>
-                                 2
-                          </span>
+                        {!!cart.length &&
+                            <span className={styles.count}>
+                               {cart.length}
+                          </span>}
                     </Link>
                 </div>
             </div>
-        </div>
-    );
+        </div>);
 };
 
 export default Header;

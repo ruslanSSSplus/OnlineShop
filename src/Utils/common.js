@@ -10,3 +10,8 @@ export const buildUrl = (url, params) => {
 
     return urlWithParams
 }
+
+
+export const sumBy = (arr) => {
+  return  arr.reduce((acc, val) => acc + val, 0)
+}
